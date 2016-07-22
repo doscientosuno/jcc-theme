@@ -2,12 +2,20 @@
   "name": "jcc-theme",
   "version": "1.0.0",
   "description": "Wordpress theme for JCC.",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "La Máquina de Turing",
-  "license": "GPL-2.0",
+  "author": {
+    "name": "La Máquina de Turing",
+    "url": "https://www.lamaquinadeturing.com",
+    "email": "info@lamaquinadeturing.com"
+  },
+  "license": {
+    "type": "GPL-2.0",
+    "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+  },
+  "keywords": "bootstrap, font-awesome, responsive, html5, media-queries",
+  "homepage": "jcc.cat",
   "devDependencies": {
     "autoprefixer": "^6.3.7",
     "bootstrap": "https://github.com/twbs/bootstrap/tarball/v4-dev",
@@ -18,6 +26,7 @@
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-changed": "^1.3.0",
+    "gulp-header": "^1.8.7",
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.1",
     "gulp-load-plugins": "^1.2.4",
@@ -29,30 +38,30 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.4",
     "gulp-uglifycss": "^1.0.6",
+    "gulp-util": "^3.0.7",
     "imagemin-pngquant": "^5.0.0",
     "karma": "^1.1.0",
     "lodash": "^4.13.1",
     "minimist": "^1.2.0",
+    "tether": "^1.3.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
     "wrench": "^1.5.9"
   },
   "config": {
-    "host": "127.0.0.1",
-    "port": "80",
+    "host": "http://jcc.cat",
     "baseUrl": "./",
     "directories": {
       "source": "src",
       "destination": "../",
       "temporary": "tmp",
       "//": "Directories relative to `source` directory",
-      "modules": "_modules",
-      "layouts": "_layouts",
       "images": "_images",
+      "modules": "_modules",
       "styles": "_styles",
       "scripts": "_scripts",
-      "data": "_data"
+      "templates": "_templates"
     },
     "entries": {
       "js": "main**.js",

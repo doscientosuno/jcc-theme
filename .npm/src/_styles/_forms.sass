@@ -1,0 +1,59 @@
+@mixin btn()
+  &,
+  &:hover,
+  &:focus,
+  &:active,
+  &:hover:focus,
+  &:hover:active,
+  &:focus:hover,
+  &:focus:active,
+  &:active:hover,
+  &:active:focus
+    background: $red
+    color: $bkg
+    border-radius: .1em
+    text-transform: uppercase
+    font-family: 'Brixton', sans-serif
+    padding: $padding
+    border: none
+    text-align: center
+    max-width: 100%
+  &
+    border-color: transparent
+    border-color: $bkg
+
+input, textarea
+  padding: $padding
+  border: none
+  border-bottom: 2px solid $txt
+  width: 100%
+  margin-bottom: .5em
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &[placeholder]
+    color: red!important
+    opacity: 1
+
+input[type="button"],
+input[type="submit"],
+button
+.btn-primary
+  @include btn()
+
+.reverse
+  input, textarea
+    border-bottom: 2px solid $bkg
+    color: $bkg
+    background: transparent
+  input[type="button"],
+  input[type="submit"],
+  button
+    background: $red
+    color: $bkg
+    border: none
+
+.btn
+  @include btn()
+  white-space: normal
