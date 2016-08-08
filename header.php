@@ -25,7 +25,7 @@
 				<?php	bloginfo( 'name' ); ?>
 			</a>
 			<button class="navbar-toggler hidden-lg-up pull-right btn-primary" type="button" data-toggle="collapse" data-target="#mainMenu">
-	      &#9776;
+	      <span class="fa fa-bars"></span>
 				<span class="sr-only"><?php _e( 'Menu and widgets', 'jcc-theme' ); ?></span>
 	    </button>
     </div>
